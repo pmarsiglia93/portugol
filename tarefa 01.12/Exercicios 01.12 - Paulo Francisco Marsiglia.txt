@@ -1,0 +1,299 @@
+01.
+
+programa{
+	/* 
+	 * Programa: Multa do tomate.
+	 * Autor: Paulo Francisco Marsiglia 
+	 * Data: 01/12/2021
+	 * ex01
+	 */	 
+	
+	funcao inicio(){
+
+		inteiro p, ex, m
+		
+		escreva("Quantos kg de tomate você tem: ")
+		leia(p)
+		
+		se (p>50){
+			ex = (p-50)
+			m = ex*4
+			escreva("Voce excedeu " + ex + "kg(s) de tomate.")
+			escreva("\nA sua multa é de " + m + " reais.")
+		
+		}
+		senao {
+			escreva ("Você não vai pagar multa!")
+		}
+	}
+}
+
+02.
+
+programa{
+	/*
+ 	* Prograna: Calculo de sálario e hora extra
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex02
+ 	*/
+	
+	funcao inicio(){
+				
+		inteiro c,n,salario
+				
+		escreva("Qual o seu código: ")
+		leia(c)
+		
+		escreva("Você tem quantas horas trabalhadas? ")
+		leia(n)
+		
+		se (n<=50) {
+			salario = n*10
+			escreva("Codigo: " + c)
+			escreva ("\nSeu salário é de R$ " + salario)
+				
+		}
+		senao se (n>50){
+			salario = (500) + ((n-50)*20)
+			escreva("Codigo: " + c)
+			escreva ("\nSeu salário é de R$ " + salario)
+			escreva("\nValor pago pela hora extra foi de R$ " + ((n-50)*20))
+			escreva ("\nVocê trabalhou " + (n-50) + " hora(s) extra(s).")
+			
+		}
+	}
+}
+
+03.
+
+programa
+{
+	/*
+ 	* Prograna: Número quadrado
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex03
+ 	*/
+	
+	funcao inicio()
+{
+		
+		inteiro n1,n2,n3,n4
+				
+		escreva("Digite o 1º número: ")
+		leia(n1)
+		
+		escreva("Digite o 2º número: ")
+		leia(n2)
+		
+		escreva("Digite o 3º número: ")
+		leia(n3)
+		
+		escreva("Digite o 4º número: ")
+		leia(n4)
+
+		n1 = (n1*n1)
+		n2 = (n2*n2)
+		n3 = (n3*n3)
+		n4 = (n4*n4)
+
+		se (n3 >= 1000) {
+
+		escreva("O valor ao quadrado do bloco 3 é: "  + n3)		
+		}
+		senao{
+			
+		escreva("O valor ao quadrado do bloco 1: " + n1)
+		escreva("\nO valor ao quadrado do bloco 2: " + n2)
+		escreva("\nO valor ao quadrado do bloco 4: " + n4)
+		
+		}
+		
+	}
+	
+}
+
+04. 
+
+programa
+{
+	/*
+ 	* Prograna: Número par ou impar
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex04
+ 	*/
+	
+	funcao inicio(){
+		
+		inteiro n
+		
+		escreva("Digite um número: ")
+		leia(n)
+
+		se (n % 2 == 0 e n>=0){
+
+		escreva("Número par e positivo")
+		}
+		senao se (n % 2 == 1 e n>=0){
+
+		escreva("Número impar e positivo")
+		}
+
+		senao se (n % 2 ==0 e n<0){
+		
+		escreva("Numero par e negativo")
+		}
+
+		senao{
+		escreva("Numero impar e negativo")
+		}	
+		
+	}
+}
+
+05. 
+
+programa
+{
+	/*
+ 	* Prograna: Poluentes
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex05
+ 	*/
+	
+	funcao inicio(){
+		
+		real i
+		
+		escreva("Digite o indice do poluição: ")
+		leia(i)
+		
+		se (i <= 0.25){
+		escreva("O indice está Ok")
+		}
+		senao se (i >= 0.30 e i <= 0.39){
+		escreva("As atividades do grupo 1 estão suspensas!")
+		}
+		senao se (i >= 0.40 e i <= 0.49){
+		escreva("As atividades do grupo 1 e 2 estão suspensas")
+		}
+		senao se (i >= 0.50 ){
+		escreva("Todos os grupos devem paralisar suas atividades")
+		}
+		senao{
+		escreva("Indice próximo a zona de perigo!")
+		}
+	}
+}
+
+06.
+
+programa
+{
+	/*
+ 	* Prograna: Categorias de natação
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex06
+ 	*/
+	
+	funcao inicio()
+{
+		
+		inteiro idade
+		
+		escreva("Digite a sua idade: ")
+		leia(idade)
+		
+		se (idade >= 5 e idade <= 7){
+		escreva("Infantil A")
+		}
+
+		senao se (idade >= 8 e idade <= 11){
+		escreva("Infantil B")
+		}
+
+		senao se (idade >= 12 e idade <= 13){
+		escreva("Juvenil A")
+		}
+
+		senao se (idade >=14 e idade <= 17){
+		escreva("Juvenil B")
+		}
+
+		senao se (idade >= 18){
+		escreva("Adultos")
+		}
+
+		senao{
+		escreva("Categoria Fraldinha")
+		}
+
+	}
+}
+
+07.
+
+programa
+{
+	/*
+ 	* Prograna: Área do triângulo
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex07
+ 	*/
+	
+	funcao inicio()
+{
+		
+		
+inteiro b, h
+		inteiro a = 0
+
+		escreva("Digite um valor para a base do triângulo: ")
+		leia (b)
+		
+		escreva("Digite um valor para  a altura do triângulo: ")
+		leia (h)
+		
+		se (b>0 e h>0){
+		a = (b*h)/2
+		escreva ("O valor da área do triângulo é: " + a)
+		}
+		
+		senao {
+		escreva ("Valores inválidos.")
+		}
+	}
+}
+
+08.
+
+programa
+{
+	/*
+ 	* Prograna: Maior que 100
+ 	* Autor: Paulo Francisco Marsiglia
+ 	* Data: 01/12/2021
+ 	* ex08
+ 	*/
+	
+	funcao inicio(){
+
+		inteiro n
+		
+		escreva("Digite um valor: ")
+		leia(n)
+
+		se (n>100){
+		escreva("O valor de N é: " + n)
+		}
+
+		senao{
+		escreva("ZERO")
+		}
+	}
+}
